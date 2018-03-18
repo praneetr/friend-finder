@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>Friend Finder</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <body>
+<head>
+  <title>Friend Finder</title>
 
-    <div class = "container">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous" />
+
+  <body>
+
+    <div class="container">
       <div class="page-header">
-        <h1 style="font-size: 35px;"></span> Survey Questions</h1>
+        <h1 style="font-size: 35px;">
+          </span> Survey Questions</h1>
       </div>
-    <hr>
+      <hr>
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title"><strong>About You</strong></h3>
+          <h3 class="panel-title">
+            <strong>About You</strong>
+          </h3>
         </div>
         <div class="panel-body">
           <h4>Name (Required)</h4>
           <div class="input-group">
-            <input id = "formName" class="form-control" type="text" name="name">
+            <input id="formName" class="form-control" type="text" name="name">
 
-          </div>  
+          </div>
           <br>
           <h4>Link to Photo Image (Required)</h4>
           <div class="input-group">
-            <input id = "formImage" class="form-control" type="text" name="name">
+            <input id="formImage" class="form-control" type="text" name="name">
           </div>
         </div>
       </div>
 
       <div class="panel panel-default">
         <div class="panel-heading">
-        <br>
+          <br>
         </div>
         <div class="panel-body">
-          
-          <h4><strong>Question 1</strong></h4>
+
+          <h4>
+            <strong>Question 1</strong>
+          </h4>
           <h5>You like to go running in the sun.</h5>
           <select data-placeholder="" class="chosen-select" id="Q1">
             <option value=""></option>
@@ -46,7 +59,9 @@
             <option value="5">5 (Strongly Agree)</option>
           </select>
 
-          <h4><strong>Question 2</strong></h4>
+          <h4>
+            <strong>Question 2</strong>
+          </h4>
           <h5>You are not picky when it comes to selecting what to eat.</h5>
           <select data-placeholder="" class="chosen-select" id="Q2">
             <option value=""></option>
@@ -57,7 +72,9 @@
             <option value="5">5 (Strongly Agree)</option>
           </select>
 
-          <h4><strong>Question 3</strong></h4>
+          <h4>
+            <strong>Question 3</strong>
+          </h4>
           <h5>You enjoy working with other people at work.</h5>
           <select data-placeholder="" class="chosen-select" id="Q3">
             <option value=""></option>
@@ -68,7 +85,9 @@
             <option value="5">5 (Strongly Agree)</option>
           </select>
 
-          <h4><strong>Question 4</strong></h4>
+          <h4>
+            <strong>Question 4</strong>
+          </h4>
           <h5>You are more of a leader rather than a follower.</h5>
           <select data-placeholder="" class="chosen-select" id="Q4">
             <option value=""></option>
@@ -79,7 +98,9 @@
             <option value="5">5 (Strongly Agree)</option>
           </select>
 
-          <h4><strong>Question 5</strong></h4>
+          <h4>
+            <strong>Question 5</strong>
+          </h4>
           <h5>You enjoy playing musical instruments.</h5>
           <select data-placeholder="" class="chosen-select" id="Q5">
             <option value=""></option>
@@ -90,7 +111,9 @@
             <option value="5">5 (Strongly Agree)</option>
           </select>
 
-          <h4><strong>Question 6</strong></h4>
+          <h4>
+            <strong>Question 6</strong>
+          </h4>
           <h5>You would like to have kids someday.</h5>
           <select data-placeholder="" class="chosen-select" id="Q6">
             <option value=""></option>
@@ -101,7 +124,9 @@
             <option value="5">5 (Strongly Agree)</option>
           </select>
 
-          <h4><strong>Question 7</strong></h4>
+          <h4>
+            <strong>Question 7</strong>
+          </h4>
           <h5>You dislike having a boss. You value being your own boss.</h5>
           <select data-placeholder="" class="chosen-select" id="Q7">
             <option value=""></option>
@@ -112,7 +137,9 @@
             <option value="5">5 (Strongly Agree)</option>
           </select>
 
-          <h4><strong>Question 8</strong></h4>
+          <h4>
+            <strong>Question 8</strong>
+          </h4>
           <h5>You make it a priorty to eat your vegetables everyday.</h5>
           <select data-placeholder="" class="chosen-select" id="Q8">
             <option value=""></option>
@@ -123,7 +150,9 @@
             <option value="5">5 (Strongly Agree)</option>
           </select>
 
-          <h4><strong>Question 9</strong></h4>
+          <h4>
+            <strong>Question 9</strong>
+          </h4>
           <h5>You are not afraid to go skydiving.</h5>
           <select data-placeholder="" class="chosen-select" id="Q9">
             <option value=""></option>
@@ -134,7 +163,9 @@
             <option value="5">5 (Strongly Agree)</option>
           </select>
 
-          <h4><strong>Question 10</strong></h4>
+          <h4>
+            <strong>Question 10</strong>
+          </h4>
           <h5>You like to invest in stocks.</h5>
           <select data-placeholder="" class="chosen-select" id="Q10">
             <option value=""></option>
@@ -147,24 +178,32 @@
         </div>
       </div>
 
-     <br>
+      <br>
 
-      <button id="submitButton" type="submit" class="btn btn-lg btn-primary btn-block"><h4>Submit</h4></button> 
-  
+      <button id="submitButton" type="submit" class="btn btn-lg btn-primary btn-block">
+        <h4>Submit</h4>
+      </button>
+
       <br>
 
       <footer class="footer">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/praneetr/friend-finder" target="_blank">GitHub Repo</a> | <a href="/">Home</a></p>
-      </footer> 
+        <p>
+          <a href="/api/friends">API Friends List</a> |
+          <a href="https://github.com/praneetr/friend-finder" target="_blank">GitHub Repo</a> |
+          <a href="/">Home</a>
+        </p>
+      </footer>
 
-<!-- need to fix modal to get pop up window to load; also check button callback fcn -->
+      <!-- need to fix modal to get pop up window to load; also check button callback fcn -->
 
       <div id="resultsModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h2 class="modal-title"><strong>Your match is: </strong></h2>
+              <h2 class="modal-title">
+                <strong>Your match is: </strong>
+              </h2>
             </div>
 
             <div class="modal-body">
@@ -180,67 +219,63 @@
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"></script> -->
 
     <script>
-      var allFieldsCompleted;
-      $(document).ready(function() {
-        $('#submitButton').on('click', function() {
-          checkIfComplete(function(){
-            if(allFieldsCompleted){
+      $(document).ready(function () {
+        $('#submitButton').on('click', function () {
+          checkIfComplete(function (allFieldsComplete) {
+            if (allFieldsCompleted) {
               collectInputs();
-            }
-            else{
+            } else {
               alert('Please complete all fields before submitting!');
             }
           });
-        }); 
-      }); 
+        });
+      });
 
-      function checkIfComplete(callback){
+      function checkIfComplete(callback) {
         var questionsCompleted;
-        $('.chosen-select').each(function(){
-          if ( $(this).val() == "" ){
+        $('.chosen-select').each(function () {
+          if ($(this).val() == "") {
             questionsCompleted = false;
           }
         })
-        .promise().done(function(){
-          if(questionsCompleted == false){
-            allFieldsCompleted = false;
-          }
-          else if( $('#formName').val().trim() == "" ){
-            allFieldsCompleted = false;
-          }
-          else if( $('#formImage').val().trim() == "" ){
-            allFieldsCompleted = false;
-          }
-          else{
-            allFieldsCompleted = true;
-          }
-          callback();       
-        });
+        let allFieldsComplete;
+        if (questionsCompleted == false) {
+          allFieldsCompleted = false;
+        } else if ($('#formName').val().trim() == "") {
+          allFieldsCompleted = false;
+        } else if ($('#formImage').val().trim() == "") {
+          allFieldsCompleted = false;
+        } else {
+          allFieldsCompleted = true;
+        }
+        callback(allFieldsComplete);
+
       }
 
-      function collectInputs(){
+      function collectInputs() {
         var newFriend = {
           name: $('#formName').val().trim(),
           photo: $('#formImage').val().trim(),
           scores: []
         };
         var scoresArray = [];
-        $('.chosen-select').each(function(){
-          scoresArray.push( parseInt( $(this).val() ) );
-        .promise().done(function(){
-          newFriend.scores = scoresArray;
-          var currentURL = window.location.origin;
-          $.post(currentURL + "/api/friends", newFriend, function(data){
-            $('#matchName').text(data.name);
-            $('#matchImg').attr('src', data.photo);
-            $("#resultsModal").modal('toggle');
-          });
+        $('.chosen-select').each(function () {
+          scoresArray.push(parseInt($(this).val()))
+        })
+        newFriend.scores = scoresArray;
+        $.post("/api/friends", newFriend, function (data) {
+          $('#matchName').text(data.name);
+          $('#matchImg').attr('src', data.photo);
+          $("#resultsModal").modal('toggle');
+        }).then(function () {
+
         });
-      }
+      };
     </script>
   </body>
 
